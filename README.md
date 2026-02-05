@@ -1,4 +1,4 @@
-# Trader Behavior Insights
+#Trader Behavior Insights
 
 A comprehensive analysis examining trading performance data against the Crypto Fear & Greed Index to understand how market sentiment impacts trader behavior and profitability.
 
