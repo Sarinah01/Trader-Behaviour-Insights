@@ -460,7 +460,7 @@ def create_visualizations(analysis_df, trades_df, account_metrics,
     plt.tight_layout()
     plt.savefig(f'{CHARTS_DIR}performance_by_sentiment.png', dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"✅ Saved: {CHARTS_DIR}performance_by_sentiment.png")
+    print(f" Saved: {CHARTS_DIR}performance_by_sentiment.png")
     
     # Figure 2: Fear vs Greed Comparison
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
@@ -501,7 +501,7 @@ def create_visualizations(analysis_df, trades_df, account_metrics,
     plt.tight_layout()
     plt.savefig(f'{CHARTS_DIR}fear_vs_greed_comparison.png', dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"✅ Saved: {CHARTS_DIR}fear_vs_greed_comparison.png")
+    print(f" Saved: {CHARTS_DIR}fear_vs_greed_comparison.png")
     
     # Figure 3: Trader Segments
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
@@ -561,7 +561,7 @@ def create_visualizations(analysis_df, trades_df, account_metrics,
     plt.tight_layout()
     plt.savefig(f'{CHARTS_DIR}trader_segments.png', dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"✅ Saved: {CHARTS_DIR}trader_segments.png")
+    print(f" Saved: {CHARTS_DIR}trader_segments.png")
     
     # Figure 4: Correlation Heatmap
     fig, ax = plt.subplots(figsize=(10, 8))
@@ -574,9 +574,9 @@ def create_visualizations(analysis_df, trades_df, account_metrics,
     plt.tight_layout()
     plt.savefig(f'{CHARTS_DIR}correlation_heatmap.png', dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"✅ Saved: {CHARTS_DIR}correlation_heatmap.png")
+    print(f" Saved: {CHARTS_DIR}correlation_heatmap.png")
     
-    print("\n✅ All visualizations complete!")
+    print("\n All visualizations complete!")
 
 def save_summary_statistics(analysis_df, trades_df, fear_days, greed_days,
                            high_lev, low_lev, high_freq, low_freq,
@@ -631,7 +631,7 @@ def save_summary_statistics(analysis_df, trades_df, fear_days, greed_days,
     })
     
     summary_table.to_csv(f'{DATA_DIR}summary_statistics.csv', index=False)
-    print(f"✅ Saved: {DATA_DIR}summary_statistics.csv")
+    print(f" Saved: {DATA_DIR}summary_statistics.csv")
     
     return summary_table
 
@@ -671,14 +671,14 @@ def main():
     print("ANALYSIS COMPLETE")
     print("=" * 80)
     print("\nOutput files generated:")
-    print(f"  📊 {DATA_DIR}daily_analysis.csv")
-    print(f"  📊 {DATA_DIR}fear_greed_aligned.csv")
-    print(f"  📊 {DATA_DIR}trader_segments.csv")
-    print(f"  📊 {DATA_DIR}summary_statistics.csv")
-    print(f"  📈 {CHARTS_DIR}performance_by_sentiment.png")
-    print(f"  📈 {CHARTS_DIR}fear_vs_greed_comparison.png")
-    print(f"  📈 {CHARTS_DIR}trader_segments.png")
-    print(f"  📈 {CHARTS_DIR}correlation_heatmap.png")
+    print(f"   {DATA_DIR}daily_analysis.csv")
+    print(f"  {DATA_DIR}fear_greed_aligned.csv")
+    print(f"  {DATA_DIR}trader_segments.csv")
+    print(f"  {DATA_DIR}summary_statistics.csv")
+    print(f"  {CHARTS_DIR}performance_by_sentiment.png")
+    print(f"  {CHARTS_DIR}fear_vs_greed_comparison.png")
+    print(f"  {CHARTS_DIR}trader_segments.png")
+    print(f"  {CHARTS_DIR}correlation_heatmap.png")
     
     return analysis_df, trades_df, account_metrics
 
