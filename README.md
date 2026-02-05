@@ -17,8 +17,8 @@ A comprehensive analysis examining trading performance data against the Crypto F
 ### Clone this repository
 
 ```bash
-git clone https://github.com/Sarinah01/Trader-Behaviour-Insights.git
-cd Trader-Behaviour-Insights
+git clone https://github.com/Sarinah01/Trader-Behavior-Insights.git
+cd Trader-Behavior-Insights
 ```
 
 ### Install dependencies
@@ -38,7 +38,7 @@ python scripts/trading_analysis.py
 ## Project Structure
 
 ```
-Trader-Behaviour-Insights/
+Trader-Behavior-Insights/
 ├── .gitignore                    # Git ignore rules
 ├── README.md                     # This file
 ├── fear_greed_index.csv          # Fear & Greed Index data (2018-2025)
