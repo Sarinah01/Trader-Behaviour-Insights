@@ -4,7 +4,7 @@ Trading Performance & Sentiment Analysis
 =========================================
 Analyzes trading performance against Crypto Fear & Greed Index
 
-Author: Trading Analytics Team
+Author: Sarinah
 Date: February 2025
 """
 
